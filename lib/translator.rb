@@ -12,7 +12,7 @@ def load_library(file_path)
 end
 
 def get_japanese_emoticon(file_path = './lib/emoticons.yml', english_emoticon)
-  table = load_table(file_path)
+  library = load_library(file_path)
   if table["get_emoticon"].include?(english_emoticon)
     table["get_emoticon"][english_emoticon]
   else
